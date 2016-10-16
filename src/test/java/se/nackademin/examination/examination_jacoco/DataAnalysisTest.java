@@ -33,7 +33,7 @@ public class DataAnalysisTest {
 	
 	@Test
 	public void test_SmallerFirstName_Over30() {
-		values.addAll(Arrays.asList("test", "Leonardo", "Dicaprio", "M", "35", "Titanic"));
+		values.addAll(Arrays.asList("Test", "Leonardo", "Dicaprio", "M", "35", "Titanic"));
 		String result = dataAnalysis.buildFinalString(values);
 		assertTrue("The result should contain 'No analysis was performed' ",
 				result.contains("No analysis was performed"));
